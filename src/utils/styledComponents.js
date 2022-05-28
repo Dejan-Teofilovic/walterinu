@@ -1,6 +1,13 @@
-import { Button, Dialog, Typography } from '@mui/material';
+import { Button, Card, Dialog, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { COLOR_DARK, COLOR_LIGHT, COLOR_PRIMARY, COLOR_SECONDARY, COLOR_SUCCESS, FONT_PRIMARY } from './constants';
+import { 
+  COLOR_DARK, 
+  COLOR_BRIGHT, 
+  COLOR_PRIMARY, 
+  COLOR_SECONDARY, 
+  COLOR_SUCCESS, 
+  FONT_PRIMARY 
+} from './constants';
 
 export const PrimaryButton = styled(Button)`
   background-color: ${COLOR_PRIMARY};
@@ -16,7 +23,7 @@ export const PrimaryButton = styled(Button)`
 
 export const PrimaryOutlinedButton = styled(Button)({
   backgroundColor: 'rgba(0, 0, 0, 0)',
-  color: COLOR_LIGHT,
+  color: COLOR_BRIGHT,
   borderRadius: 25,
   border: `2px solid ${COLOR_PRIMARY}`,
   textTransform: 'capitalize',
@@ -58,5 +65,15 @@ export const DarkTypography = styled(Typography)`
 
 export const BrightTypography = styled(Typography)`
   font-family: ${FONT_PRIMARY};
-  color: ${COLOR_LIGHT};
+  color: ${COLOR_BRIGHT};
+`;
+
+export const DarkCard = styled(Card)`
+  background: ${COLOR_DARK};
+  border-radius: 25px;
+`;
+
+export const PrimaryCard = styled(Card)`
+  background: ${COLOR_PRIMARY};
+  border-radius: 25px;
 `;

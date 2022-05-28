@@ -86,7 +86,7 @@ export const COLOR_PRIMARY = '#60FF42';
 export const COLOR_SECONDARY = grey[600];
 export const COLOR_SUCCESS = '#4caf50';
 export const COLOR_DARK = grey[900];
-export const COLOR_LIGHT = 'white';
+export const COLOR_BRIGHT = 'white';
 
 export const FONT_PRIMARY = 'font-walter-turncoat';
 export const FONT_SECONDARY = '';
