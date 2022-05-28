@@ -3,6 +3,7 @@ import CoinMarketCapSection from './CoinMarketCapSection';
 import HeroSection from './HeroSection';
 import JoinTheInvasionSection from './JoinTheInvasionSection';
 import UtilitySection from './UtilitySection';
+import MetaverseSection from './MetaverseSection';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <CoinMarketCapSection />
       <UtilitySection />
       <JoinTheInvasionSection />
+      <MetaverseSection />
     </>
   );
 }

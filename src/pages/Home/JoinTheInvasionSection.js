@@ -69,17 +69,17 @@ export default function JoinTheInvasionSection() {
             px={{ xs: 2, md: 0 }}
           >
             <PrimaryButton
-              sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
+              sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
             >Get Your Ticket To Moon</PrimaryButton>
             <PrimaryOutlinedButton
-              sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
+              sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
             >Not Your Normal White Paper</PrimaryOutlinedButton>
           </Stack>
         </Box>
-        <Grid 
-          container 
-          alignItems="center" 
-          spacing={{ xs: 1, md: 3 }} 
+        <Grid
+          container
+          alignItems="center"
+          spacing={{ xs: 1, md: 3 }}
           sx={{ pt: { xs: 2, md: 16 } }}
         >
           <Grid item xs={12} md={6}>
@@ -108,6 +108,31 @@ export default function JoinTheInvasionSection() {
           </Grid>
         </Grid>
       </Box>
+
+      <Stack direction="row" justifyContent="center" width="100%" mt={3}>
+        <Box
+          bgcolor="#131313"
+          width="30%"
+          sx={{
+            borderTopRightRadius: 9999,
+            borderTopLeftRadius: 9999,
+            display: 'flex',
+            justifyContent: 'center'
+          }}
+          pt={3}
+        >
+          <Box width="40%">
+            <lottie-player
+              src="https://assets4.lottiefiles.com/private_files/lf30_h8chtt4u.json"
+              background="transparent"
+              speed="1"
+              style={{ width: '100%', height: '100%' }}
+              loop
+              autoplay
+            ></lottie-player>
+          </Box>
+        </Box>
+      </Stack>
     </Box>
   );
 }

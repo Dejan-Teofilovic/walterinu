@@ -38,10 +38,10 @@ export default function HeroSection() {
               justifyContent={{ xs: 'center', md: 'start' }}
             >
               <PrimaryButton
-                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
+                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
               >Buy Now</PrimaryButton>
               <PrimaryOutlinedButton
-                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
+                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
               >Telegram</PrimaryOutlinedButton>
             </Stack>
           </Grid>
