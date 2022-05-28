@@ -94,7 +94,7 @@ export default function UtilitySection() {
         <SecondaryTypography fontSize={{ md: 20 }}>
           Utility / Use Case
         </SecondaryTypography>
-        <BrightTypography fontSize={{ md: 48 }} fontWeight={900}>
+        <BrightTypography fontSize={{ md: 58 }} fontWeight={900}>
           Metaverse plan of invasion
         </BrightTypography>
         <SecondaryTypography fontSize={{ md: 18 }}>
