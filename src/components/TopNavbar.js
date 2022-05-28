@@ -18,7 +18,7 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import { grey } from '@mui/material/colors';
 import { PrimaryButton, TextButton } from '../utils/styledComponents';
-import { ROUTES } from '../utils/constants';
+import { COLOR_DARK, ROUTES } from '../utils/constants';
 
 const CustomizedDrawer = styled(Drawer)`
   .MuiPaper-root {
@@ -30,7 +30,13 @@ export default function TopNavbar() {
   const [drawerOpened, setDrawerOpened] = useState(false);
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: 'rgba(0, 0, 0, 0)', py: 1 }}>
+    <AppBar
+      position="sticky"
+      sx={{
+        backgroundColor: 'rgba(10, 10, 10, 0.8)',
+        py: 1,
+        borderBottom: `1px solid ${COLOR_DARK}`
+      }}>
       <Container maxWidth="xl">
         <Toolbar>
           {/* For Mobile */}
