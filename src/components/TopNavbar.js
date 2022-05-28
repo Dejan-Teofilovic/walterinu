@@ -34,7 +34,7 @@ export default function TopNavbar() {
       position="sticky"
       sx={{
         backgroundColor: 'rgba(10, 10, 10, 0.8)',
-        py: 1,
+        py: { md: 1 },
         borderBottom: `1px solid ${COLOR_DARK}`
       }}>
       <Container maxWidth="xl">

@@ -14,27 +14,34 @@ export default function HeroSection() {
         background: 'url(/assets/images/hero_bg.jpg) no-repeat',
         backgroundSize: 'cover'
       }}
-      pt={10}
+      pt={{ xs: 3, md: 10 }}
     >
       <Container maxWidth="xl">
-        <Grid container>
+        <Grid container spacing={{ xs: 4, md: 0 }}>
           <Grid item xs={12} md={6}>
             <BrightTypography
-              fontSize={{ md: 48 }}
+              fontSize={{ xs: 36, md: 58 }}
               fontWeight={900}
+              textAlign={{ xs: 'center', md: 'left' }}
             >Screw, the Moon, Elon's Taking Us To Mars</BrightTypography>
             <SecondaryTypography
               mt={3}
-              fontSize={{ md: 20 }}
+              fontSize={{ xs: 14, md: 20 }}
+              textAlign={{ xs: 'center', md: 'left' }}
             >
               Finally, Elon gets on board with a meme coin that has actual utility-staking, P2E game, Launchpad, NFT Marketplace, and NFTs without the gas fees (well almost).
             </SecondaryTypography>
-            <Stack mt={5} direction="row" spacing={3}>
+            <Stack
+              mt={5}
+              direction="row"
+              spacing={{ xs: 1, md: 3 }}
+              justifyContent={{ xs: 'center', md: 'start' }}
+            >
               <PrimaryButton
-                sx={{ fontSize: 16, px: 4, py: 1 }}
+                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
               >Buy Now</PrimaryButton>
               <PrimaryOutlinedButton
-                sx={{ fontSize: 16, px: 4, py: 1 }}
+                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
               >Telegram</PrimaryOutlinedButton>
             </Stack>
           </Grid>

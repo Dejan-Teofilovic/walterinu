@@ -90,14 +90,18 @@ const CarouselItem = ({ dataItem }) => {
 export default function UtilitySection() {
   return (
     <Box className="utility-curve">
-      <Container maxWidth="xl" sx={{ py: 12 }}>
-        <SecondaryTypography fontSize={{ md: 20 }}>
+      <Container maxWidth="xl" sx={{ py: { xs: 4, md: 12 } }}>
+        <SecondaryTypography fontSize={{ xs: 16, md: 20 }} textAlign={{ xs: 'center', md: 'left' }}>
           Utility / Use Case
         </SecondaryTypography>
-        <BrightTypography fontSize={{ md: 58 }} fontWeight={900}>
+        <BrightTypography
+          fontSize={{ xs: 36, md: 58 }}
+          fontWeight={900}
+          textAlign={{ xs: 'center', md: 'left' }}
+        >
           Metaverse plan of invasion
         </BrightTypography>
-        <SecondaryTypography fontSize={{ md: 18 }}>
+        <SecondaryTypography fontSize={{ md: 18 }} textAlign={{ xs: 'center', md: 'left' }}>
           Walter Inu is powered by strong utility that will ensure this project reaches Moon
         </SecondaryTypography>
 

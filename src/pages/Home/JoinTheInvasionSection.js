@@ -1,7 +1,12 @@
 import React from 'react';
-import { Box, Container, Grid, Stack, Typography } from '@mui/material';
-import { COLOR_DARK, COLOR_SECONDARY } from '../../utils/constants';
-import { BrightTypography, DarkTypography, PrimaryButton, PrimaryOutlinedButton, SecondaryTypography } from '../../utils/styledComponents';
+import { Box, Container, Grid, Stack } from '@mui/material';
+import { COLOR_DARK } from '../../utils/constants';
+import {
+  BrightTypography,
+  PrimaryButton,
+  PrimaryOutlinedButton,
+  SecondaryTypography
+} from '../../utils/styledComponents';
 
 export default function JoinTheInvasionSection() {
   return (
@@ -17,7 +22,7 @@ export default function JoinTheInvasionSection() {
             direction="row"
             justifyContent="center"
             width="30%"
-            p={5}
+            p={{ xs: 2, md: 5 }}
           >
             <Box
               component="img"
@@ -36,7 +41,7 @@ export default function JoinTheInvasionSection() {
           zIndex={10}
         >
           <SecondaryTypography
-            fontSize={{ md: 96 }}
+            fontSize={{ xs: 56, md: 96 }}
             fontWeight={900}
             textAlign="center"
             sx={{
@@ -51,39 +56,50 @@ export default function JoinTheInvasionSection() {
           position="relative"
           width="100%"
           zIndex={20}
-          pt={12}
+          pt={{ xs: 8, mt: 12 }}
         >
-          <BrightTypography fontSize={{ md: 58 }} fontWeight={900} textAlign="center">
+          <BrightTypography fontSize={{ xs: 36, md: 58 }} fontWeight={900} textAlign="center">
             Join the invasion
           </BrightTypography>
-          <Stack direction="row" justifyContent="center" spacing={3} mt={5}>
+          <Stack
+            direction={{ xs: 'column', md: 'row' }}
+            justifyContent="center"
+            spacing={{ xs: 1, md: 3 }}
+            mt={{ xs: 2, mt: 5 }}
+            px={{ xs: 2, md: 0 }}
+          >
             <PrimaryButton
-              sx={{ fontSize: 16, px: 4, py: 1 }}
+              sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
             >Get Your Ticket To Moon</PrimaryButton>
             <PrimaryOutlinedButton
-              sx={{ fontSize: 16, px: 4, py: 1 }}
+              sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 1 }, py: 1 }}
             >Not Your Normal White Paper</PrimaryOutlinedButton>
           </Stack>
         </Box>
-        <Grid container alignItems="center" mt={12} spacing={3}>
+        <Grid container alignItems="center" mt={12} spacing={{ xs: 1, md: 3 }}>
           <Grid item xs={12} md={6}>
             <Stack direction="row" justifyContent="center">
-              <iframe 
+              <iframe
                 title="flooz"
-                scroll="no" 
-                seamless="seamless" 
-                src="https://www.flooz.trade/embedded/0x42c1613dd2236cfd60b5cbec846b5ead71be99df/?backgroundColor=transparent&amp;chainId=56" 
-                style={{ border: '0px', overflow: 'hidden', width: '70%', height: '700px' }}
+                scroll="no"
+                seamless="seamless"
+                src="https://www.flooz.trade/embedded/0x42c1613dd2236cfd60b5cbec846b5ead71be99df/?backgroundColor=transparent&amp;chainId=56"
+                style={{ border: '0px', overflow: 'hidden', width: '80%', height: '700px' }}
               ></iframe>
             </Stack>
           </Grid>
           <Grid item xs={12} md={6}>
-            <BrightTypography
-              fontSize={{ md: 56 }}
-              fontWeight={900}
-            >
-              Buy $WINU now directly with Creditcard, Apple Pay & Google Pay
-            </BrightTypography>
+            <Stack direction="row" justifyContent={{ xs: 'center', md: 'start' }}>
+              <Box width={{ xs: '100%', md: '70%' }}>
+                <BrightTypography
+                  fontSize={{ xs: 20, md: 58 }}
+                  fontWeight={900}
+                  textAlign={{ xs: 'center', md: 'left' }}
+                >
+                  Buy $WINU now directly with Creditcard, Apple Pay & Google Pay
+                </BrightTypography>
+              </Box>
+            </Stack>
           </Grid>
         </Grid>
       </Box>
