@@ -30,7 +30,7 @@ export default function TopNavbar() {
   const [drawerOpened, setDrawerOpened] = useState(false);
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'rgba(0, 0, 0, 0)', py: 3 }}>
+    <AppBar position="sticky" sx={{ backgroundColor: 'rgba(0, 0, 0, 0)', py: 3 }}>
       <Container maxWidth="xl">
         <Toolbar>
           {/* For Mobile */}
