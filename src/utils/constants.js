@@ -1,11 +1,27 @@
 export const ROUTES = [
   {
-    name: 'foo',
-    path: '#foo'
+    name: 'About',
+    path: '#about'
   },
   {
-    name: 'bar',
-    path: '#bar'
+    name: 'Tokenomics',
+    path: '#tokenomics'
+  },
+  {
+    name: 'Roadmap',
+    path: '#roadmap'
+  },
+  {
+    name: 'How to buy',
+    path: 'how-to-buy'
+  },
+  {
+    name: 'FAQ',
+    path: '#faq'
+  },
+  {
+    name: 'Announcements',
+    path: '#announcement'
   }
 ];
 
@@ -64,6 +80,10 @@ export const VAR_FADE_IN_RIGHT = {
 };
 
 // Colors
-export const COLOR_PRIMARY = '#eec51e';
+export const COLOR_PRIMARY = '#60FF42';
+export const COLOR_SECONDARY = '';
+
+export const FONT_PRIMARY = 'font-walter-turncoat';
+export const FONT_SECONDARY = '';
 
 export const COMMUNITY_TELEGRAM_URL = 'https://t.me/KingPacToken';
