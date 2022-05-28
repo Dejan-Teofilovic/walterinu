@@ -4,6 +4,7 @@ import HeroSection from './HeroSection';
 import JoinTheInvasionSection from './JoinTheInvasionSection';
 import UtilitySection from './UtilitySection';
 import MetaverseSection from './MetaverseSection';
+import RoadmapSection from './RoadmapSection';
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <UtilitySection />
       <JoinTheInvasionSection />
       <MetaverseSection />
+      <RoadmapSection />
     </>
   );
 }
