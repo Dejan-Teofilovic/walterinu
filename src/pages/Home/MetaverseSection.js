@@ -1,11 +1,44 @@
 import React from 'react';
 import { Box, Container, Grid, Stack } from '@mui/material';
-import { COLOR_DARK } from '../../../utils/constants';
+import { COLOR_DARK } from '../../utils/constants';
 import {
   SecondaryTypography,
   BrightTypography,
   PrimaryTypography
-} from '../../../utils/styledComponents';
+} from '../../utils/styledComponents';
+import Carousel from '../../components/Carousel';
+
+const SLIDER_SETTINGS = {
+  dots: false,
+  arrows: false,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: { slidesToShow: 4 }
+    },
+    {
+      breakpoint: 960,
+      settings: { slidesToShow: 2 }
+    },
+    {
+      breakpoint: 480,
+      settings: { slidesToShow: 1, centerPadding: '0' }
+    }
+  ]
+};
+
+const CarouselItem = (dataItem) => {
+  return (
+    <Box
+
+    ></Box>
+  );
+};
 
 export default function MetaverseSection() {
   return (
@@ -31,8 +64,8 @@ export default function MetaverseSection() {
       <Container maxWidth="xl" sx={{ mt: { xs: 6, md: 12 } }}>
         <Grid container spacing={{ xs: 1, md: 0 }} alignItems="center">
           <Grid item xs={12} md={6}>
-            <PrimaryTypography 
-              fontSize={{ xs: 16, md: 20 }} 
+            <PrimaryTypography
+              fontSize={{ xs: 16, md: 20 }}
               textAlign={{ xs: 'center', md: 'left' }}
             >
               Twitter mentions
@@ -46,7 +79,7 @@ export default function MetaverseSection() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Stack direction="row" justifyContent="center">
-              <Box 
+              <Box
                 component="img"
                 src="/assets/images/twitter_mentions.png"
                 alt="Twitter mentions"
@@ -57,9 +90,10 @@ export default function MetaverseSection() {
         </Grid>
       </Container>
 
-
       <Box>
-        
+        {/* <Carousel 
+          sliderSettings={SLIDER_SETTINGS}
+        /> */}
       </Box>
     </Box>
   );
