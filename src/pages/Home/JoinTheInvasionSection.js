@@ -76,7 +76,12 @@ export default function JoinTheInvasionSection() {
             >Not Your Normal White Paper</PrimaryOutlinedButton>
           </Stack>
         </Box>
-        <Grid container alignItems="center" mt={12} spacing={{ xs: 1, md: 3 }}>
+        <Grid 
+          container 
+          alignItems="center" 
+          spacing={{ xs: 1, md: 3 }} 
+          sx={{ pt: { xs: 2, md: 16 } }}
+        >
           <Grid item xs={12} md={6}>
             <Stack direction="row" justifyContent="center">
               <iframe
