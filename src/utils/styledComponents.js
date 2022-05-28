@@ -1,6 +1,6 @@
 import { Button, Dialog, Typography } from '@mui/material';
 import { styled } from '@mui/material/styles';
-import { COLOR_DARK, COLOR_LIGHT, COLOR_PRIMARY, COLOR_SECONDARY, FONT_PRIMARY } from './constants';
+import { COLOR_DARK, COLOR_LIGHT, COLOR_PRIMARY, COLOR_SECONDARY, COLOR_SUCCESS, FONT_PRIMARY } from './constants';
 
 export const PrimaryButton = styled(Button)`
   background-color: ${COLOR_PRIMARY};
@@ -43,7 +43,12 @@ export const PrimaryTypography = styled(Typography)`
 
 export const SecondaryTypography = styled(Typography)`
   font-family: ${FONT_PRIMARY};
-  color: ${COLOR_SECONDARY}
+  color: ${COLOR_SECONDARY};
+`;
+
+export const SuccessTypography = styled(Typography)`
+  font-family: ${FONT_PRIMARY};
+  color: ${COLOR_SUCCESS};
 `;
 
 export const DarkTypography = styled(Typography)`
@@ -51,7 +56,7 @@ export const DarkTypography = styled(Typography)`
   color: ${COLOR_DARK}
 `;
 
-export const LightTypography = styled(Typography)`
+export const BrightTypography = styled(Typography)`
   font-family: ${FONT_PRIMARY};
   color: ${COLOR_LIGHT};
 `;

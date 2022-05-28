@@ -1,16 +1,21 @@
 import React from 'react';
 import { Box, Container, Grid, Stack } from "@mui/material";
-import { LightTypography, PrimaryButton, PrimaryOutlinedButton, SecondaryTypography } from '../../utils/styledComponents';
+import {
+  BrightTypography,
+  PrimaryButton,
+  PrimaryOutlinedButton,
+  SecondaryTypography
+} from '../../utils/styledComponents';
 
 export default function HeroSection() {
   return (
     <Container sx={{ mt: 10 }} maxWidth="xl">
       <Grid container>
         <Grid item xs={12} md={6}>
-          <LightTypography
+          <BrightTypography
             fontSize={{ md: 48 }}
             fontWeight={900}
-          >Screw, the Moon, Elon's Taking Us To Mars</LightTypography>
+          >Screw, the Moon, Elon's Taking Us To Mars</BrightTypography>
           <SecondaryTypography
             mt={3}
             fontSize={{ md: 20 }}
@@ -28,7 +33,7 @@ export default function HeroSection() {
         </Grid>
         <Grid item xs={12} md={6}>
           <Stack direction="row" justifyContent="center">
-            <Box component="img" src="/assets/images/hero.jpg" alt="hero" width="80%" />
+            <Box component="img" src="/assets/images/hero.png" alt="hero" width="80%" />
           </Stack>
         </Grid>
       </Grid>
