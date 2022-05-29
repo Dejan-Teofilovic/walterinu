@@ -5,6 +5,7 @@ import JoinTheInvasionSection from './JoinTheInvasionSection';
 import UtilitySection from './UtilitySection';
 import MetaverseSection from './MetaverseSection';
 import RoadmapSection from './RoadmapSection';
+import TokenomicsSection from './TokenomicsSection';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <JoinTheInvasionSection />
       <MetaverseSection />
       <RoadmapSection />
+      <TokenomicsSection />
     </>
   );
 }

@@ -1,12 +1,20 @@
-import { Button, Card, Dialog, Typography } from '@mui/material';
-import { styled } from '@mui/material/styles';
 import { 
-  COLOR_DARK, 
-  COLOR_BRIGHT, 
-  COLOR_PRIMARY, 
-  COLOR_SECONDARY, 
-  COLOR_SUCCESS, 
-  FONT_PRIMARY 
+  Button, 
+  Card, 
+  Dialog, 
+  Typography, 
+  LinearProgress, 
+  linearProgressClasses 
+} from '@mui/material';
+import { styled } from '@mui/material/styles';
+import {
+  COLOR_DARK,
+  COLOR_BRIGHT,
+  COLOR_PRIMARY,
+  COLOR_SECONDARY,
+  COLOR_SUCCESS,
+  FONT_PRIMARY,
+  COLOR_WARNING
 } from './constants';
 
 export const PrimaryButton = styled(Button)`
@@ -77,3 +85,27 @@ export const PrimaryCard = styled(Card)`
   background: ${COLOR_PRIMARY};
   border-radius: 25px;
 `;
+
+export const SuccessLinearProgressbar = styled(LinearProgress)({
+  height: 10,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor: COLOR_SECONDARY,
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    borderRadius: 5,
+    backgroundColor: COLOR_SUCCESS,
+  },
+});
+
+export const WarningLinearProgressbar = styled(LinearProgress)({
+  height: 10,
+  borderRadius: 5,
+  [`&.${linearProgressClasses.colorPrimary}`]: {
+    backgroundColor: COLOR_SECONDARY,
+  },
+  [`& .${linearProgressClasses.bar}`]: {
+    borderRadius: 5,
+    backgroundColor: COLOR_WARNING,
+  },
+});
