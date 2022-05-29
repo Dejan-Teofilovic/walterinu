@@ -126,9 +126,6 @@ export default function TokenomicsSection() {
       <BrightTypography fontSize={{ xs: 36, md: 58 }} fontWeight={900} textAlign="center">
         Tokenomics
       </BrightTypography>
-      <SecondaryTypography fontSize={{ xs: 16, md: 20 }} textAlign="center">
-        The coin dynamics that help fuel the Marvolution
-      </SecondaryTypography>
       <PrimaryTypography mt={3} fontSize={{ md: 18 }} textAlign="center">
         100,000,000,000
       </PrimaryTypography>
