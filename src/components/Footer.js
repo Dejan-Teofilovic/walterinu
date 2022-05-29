@@ -70,7 +70,7 @@ export default function Footer() {
           }
         </Stack>
         <BrightTypography textAlign="center" fontSize={{ xs: 14, md: 16 }}>
-          © 2022 WalterInu.Inc
+          © {new Date().getFullYear()} WalterInu.Inc
         </BrightTypography>
       </Stack>
     </Box>
