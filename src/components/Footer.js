@@ -92,7 +92,13 @@ export default function Footer() {
             ))
           }
         </Stack>
-        <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="center" spacing={3}>
+        <Stack
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          spacing={3}
+          sx={{ flexFlow: 'wrap' }}
+        >
           {
             CRYPTO_LINKS.map((dataItem, index) => (
               <TextButton
