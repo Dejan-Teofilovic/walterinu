@@ -16,8 +16,8 @@ const CARDS_DATA = [
     title: 'Marketing',
     subtitle: 'Sharing the mission',
     description: 'Every Marvin Inu transaction gives more fuel to our marketing message. With an experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to send this rocket soaring to Mars.',
-    buyPercentage: 4,
-    sellPercentage: 8,
+    buyPercentage: 3,
+    sellPercentage: 9,
     image: 'tokenomics_marketing.png',
     imageWidth: '80%'
   },
@@ -25,8 +25,8 @@ const CARDS_DATA = [
     title: 'Liquidity',
     subtitle: 'Sharing the mission',
     description: 'Every Marvin Inu transaction gives more fuel to our marketing message. With an experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to send this rocket soaring to Mars.',
-    buyPercentage: 3,
-    sellPercentage: 3,
+    buyPercentage: 1,
+    sellPercentage: 1,
     image: 'tokenomics_liquidity.png',
     imageWidth: '60%'
   },
@@ -34,8 +34,8 @@ const CARDS_DATA = [
     title: 'Reflection',
     subtitle: 'Sharing the mission',
     description: 'Every Marvin Inu transaction gives more fuel to our marketing message. With an experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to send this rocket soaring to Mars.',
-    buyPercentage: 4,
-    sellPercentage: 8,
+    buyPercentage: 1,
+    sellPercentage: 1,
     image: 'tokenomics_reflection.png',
     imageWidth: '80%'
   }
@@ -111,7 +111,7 @@ const CardItem = ({ dataItem }) => {
           <CustomLinearProgressbar
             variant={WARNING}
             label="Sell"
-            value={dataItem.buyPercentage}
+            value={dataItem.sellPercentage}
           />
         </Stack>
       </Stack>
