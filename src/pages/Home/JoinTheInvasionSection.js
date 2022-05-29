@@ -31,7 +31,6 @@ export default function JoinTheInvasionSection() {
           </SecondaryTypography>
         </Box>
         <Box
-
           position="relative"
           width="100%"
           zIndex={20}
@@ -75,6 +74,7 @@ export default function JoinTheInvasionSection() {
           alignItems="center"
           spacing={{ xs: 1, md: 3 }}
           sx={{ pt: { xs: 2, md: 16 } }}
+          id="buy"
         >
           <Grid item xs={12} md={6}>
             <Stack direction="row" justifyContent="center">

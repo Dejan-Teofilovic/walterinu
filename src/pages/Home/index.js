@@ -12,7 +12,6 @@ import OurPartnersSection from './OurPartnersSection';
 import ScrollFab from '../../components/ScrollFab';
 
 export default function Home() {
-
   return (
     <>
       <HeroSection />

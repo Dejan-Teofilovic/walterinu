@@ -117,7 +117,17 @@ export default function TopNavbar() {
           }
           <PrimaryButton
             variant="contained"
-          >Buy Now</PrimaryButton>
+          >
+            <ScrollLink
+              to="buy"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              Buy Now
+            </ScrollLink>
+          </PrimaryButton>
         </Toolbar>
       </Container>
     </AppBar>
