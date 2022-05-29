@@ -1,10 +1,11 @@
-import { 
-  Button, 
-  Card, 
-  Dialog, 
-  Typography, 
-  LinearProgress, 
-  linearProgressClasses 
+import {
+  Button,
+  Card,
+  Dialog,
+  Typography,
+  LinearProgress,
+  linearProgressClasses,
+  IconButton
 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import {
@@ -28,6 +29,13 @@ export const PrimaryButton = styled(Button)`
     background-color: ${COLOR_PRIMARY};
   } 
 `;
+
+export const PrimaryIconButton = styled(IconButton)({
+  backgroundColor: COLOR_PRIMARY,
+  '&:hover': {
+    backgroundColor: COLOR_PRIMARY
+  }
+});
 
 export const PrimaryOutlinedButton = styled(Button)({
   backgroundColor: 'rgba(0, 0, 0, 0)',

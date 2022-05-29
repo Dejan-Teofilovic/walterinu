@@ -12,7 +12,7 @@ import {
 import { Icon } from '@iconify/react';
 import { BrightTypography, DarkCard, SecondaryTypography } from '../../utils/styledComponents';
 import Carousel from '../../components/Carousel';
-import { COLOR_DARK, COLOR_PRIMARY, COLOR_SECONDARY } from '../../utils/constants';
+import { COLOR_PRIMARY } from '../../utils/constants';
 
 const TEAM_MEMBERS = [
   {
