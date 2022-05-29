@@ -56,7 +56,7 @@ const SLIDER_SETTINGS = {
 const BUY_GUIDE = [
   'Add $BNB to your wallet',
   'Go to the Pancakeswap form on the website',
-  'Adjust slippage to 7%-10%',
+  'Adjust slippage to 5%-7%',
   'Press "Import token"',
   'Get ready to travel to Mars!'
 ];
@@ -130,7 +130,7 @@ export default function TokenomicsSection() {
         The coin dynamics that help fuel the Marvolution
       </SecondaryTypography>
       <PrimaryTypography mt={3} fontSize={{ md: 18 }} textAlign="center">
-        1,000,000,000,000
+        100,000,000,000
       </PrimaryTypography>
 
       {/* Cards */}
@@ -170,16 +170,13 @@ export default function TokenomicsSection() {
           </Grid>
           <Grid item xs={12} md={8}>
             <Stack direction="row" alignItems="center" spacing={3}>
-              <BrightTypography fontSize={{ xs: 36, md: 58 }} fontWeight={900}>
+              <BrightTypography fontSize={{ xs: 28, md: 58 }} fontWeight={900}>
                 How to buy
               </BrightTypography>
               <PrimaryButton
                 sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
               >Pancakeswap</PrimaryButton>
             </Stack>
-            <SecondaryTypography fontSize={{ xs: 16, md: 20 }}>
-              You can now buy directly from the Pancakeswap form on our website
-            </SecondaryTypography>
 
             <Stack mt={3} spacing={2}>
               {

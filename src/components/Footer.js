@@ -3,12 +3,12 @@ import {
   Box,
   Stack,
   Icon as MuiIcon,
-  Link,
+  Link
 } from '@mui/material';
 import { Icon } from '@iconify/react';
-import { COLOR_DARK } from '../utils/constants';
+import { COLOR_DARK, COLOR_PRIMARY } from '../utils/constants';
 // import MotionDiv from './MotionDiv';
-import { BrightTypography, PrimaryIconButton } from '../utils/styledComponents';
+import { BrightTypography, PrimaryIconButton, TextButton } from '../utils/styledComponents';
 
 const SOCIAL_LINKS = [
   {
@@ -43,6 +43,29 @@ const SOCIAL_LINKS = [
   }
 ];
 
+const CRYPTO_LINKS = [
+  {
+    name: 'Coingecko',
+    href: 'https://www.coingecko.com/en/coins/walter-inu'
+  },
+  {
+    name: 'Coinmarketcap',
+    href: 'https://coinmarketcap.com/currencies/walterinu/'
+  },
+  {
+    name: 'Pancakeswap',
+    href: 'https://pancakeswap.finance/swap?outputCurrency=0x42C1613dD2236CFd60B5cbEc846b5EAD71be99Df'
+  },
+  {
+    name: 'Bscscan',
+    href: 'https://bscscan.com/token/0x42c1613dd2236cfd60b5cbec846b5ead71be99df'
+  },
+  {
+    name: 'Dextools',
+    href: 'https://www.dextools.io/app/bsc/pair-explorer/0x8a6e2125cdd31d741c85752913025adcecb80b7d'
+  }
+];
+
 export default function Footer() {
   return (
     <Box>
@@ -66,6 +89,21 @@ export default function Footer() {
                   <Icon icon={dataItem.icon} />
                 </MuiIcon>
               </PrimaryIconButton>
+            ))
+          }
+        </Stack>
+        <Stack direction={{ xs: 'column', md: 'row' }} justifyContent="center" spacing={3}>
+          {
+            CRYPTO_LINKS.map((dataItem, index) => (
+              <TextButton
+                key={index}
+                component={Link}
+                href={dataItem.href}
+                target="_blank"
+                sx={{ color: COLOR_PRIMARY }}
+              >
+                {dataItem.name}
+              </TextButton>
             ))
           }
         </Stack>

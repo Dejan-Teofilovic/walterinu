@@ -47,18 +47,18 @@ export default function JoinTheInvasionSection() {
             mt={{ xs: 2, mt: 5 }}
             px={{ xs: 2, md: 0 }}
           >
-            <PrimaryOutlinedButton
+            <PrimaryButton
               sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
               component={Link}
               href="https://medium.com/@walterinuofficial"
               target="_blank"
-            >Whitepaper</PrimaryOutlinedButton>
-            <PrimaryButton
+            >Medium</PrimaryButton>
+            <PrimaryOutlinedButton
               sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
               component={Link}
               href="https://www.walterinu.io/_files/ugd/01dff7_90846f29678b4e358e222afcf78cbfa6.pdf"
               target="_blank"
-            >Medium</PrimaryButton>
+            >Whitepaper</PrimaryOutlinedButton>
           </Stack>
         </Box>
         <Container maxWidth="lg" sx={{ mt: 4 }}>

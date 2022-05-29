@@ -58,55 +58,51 @@ export default function RoadmapSection() {
 
         <Stack justifyContent="center" position="absolute" top={0} width="100%" height="100%">
           <Container maxWidth="xl">
-            <Grid container>
-              <Grid item xs={12} md={6}></Grid>
-              <Grid item xs={12} md={6}>
-                <BrightTypography
-                  fontSize={{ xs: 36, md: 58 }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                  fontWeight={900}
-                >
-                  Walter, Our Community Mascot
-                </BrightTypography>
-                <SecondaryTypography
-                  fontSize={{ xs: 18, md: 24 }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                >
-                  We like to do things different at Walter, so we decided to get a community mascot dog as another cool aspect of the token. This is the page strictly dedicated to photos and videos of our crazy little guy. You can also follow him on Instagram @naughtywalter
-                </SecondaryTypography>
-                <Stack
-                  mt={5}
-                  direction="row"
-                  spacing={{ xs: 1, md: 3 }}
-                  justifyContent={{ xs: 'center', md: 'start' }}
-                >
-                  <PrimaryOutlinedButton
-                    sx={{
-                      fontSize: { xs: 12, md: 16 },
-                      px: { xs: 2, md: 4 },
-                      py: 1,
-                      bgcolor: COLOR_DARK,
-                      boxShadow: `1px 5px 8px ${COLOR_DARK}`
-                    }}
-                    component={Link}
-                    href="https://www.walterinu.io/_files/ugd/01dff7_dd6cc278388240c891b497747b1db83c.pdf"
-                    target="_blank"
-                  >Contract Audit</PrimaryOutlinedButton>
-                  <PrimaryOutlinedButton
-                    sx={{
-                      fontSize: { xs: 12, md: 16 },
-                      px: { xs: 2, md: 4 },
-                      py: 1,
-                      bgcolor: COLOR_DARK,
-                      boxShadow: `1px 5px 8px ${COLOR_DARK}`
-                    }}
-                    component={Link}
-                    href="https://www.instagram.com/naughtywalter"
-                    target="_blank"
-                  >Visit our instagram</PrimaryOutlinedButton>
-                </Stack>
-              </Grid>
-            </Grid>
+            <BrightTypography
+              fontSize={{ xs: 36, md: 58 }}
+              textAlign="center"
+              fontWeight={900}
+            >
+              Walter, Our Community Mascot
+            </BrightTypography>
+            <BrightTypography
+              mt={2}
+              fontSize={{ xs: 18, md: 24 }}
+              textAlign="center"
+            >
+              We like to do things different at Walter, so we decided to get a community mascot dog as another cool aspect of the token. This is the page strictly dedicated to photos and videos of our crazy little guy. You can also follow him on Instagram @naughtywalter
+            </BrightTypography>
+            <Stack
+              mt={5}
+              direction="row"
+              spacing={{ xs: 1, md: 3 }}
+              justifyContent="center"
+            >
+              <PrimaryOutlinedButton
+                sx={{
+                  fontSize: { xs: 12, md: 16 },
+                  px: { xs: 2, md: 4 },
+                  py: 1,
+                  bgcolor: COLOR_DARK,
+                  boxShadow: `1px 5px 8px ${COLOR_DARK}`
+                }}
+                component={Link}
+                href="https://www.walterinu.io/_files/ugd/01dff7_dd6cc278388240c891b497747b1db83c.pdf"
+                target="_blank"
+              >Contract Audit</PrimaryOutlinedButton>
+              <PrimaryOutlinedButton
+                sx={{
+                  fontSize: { xs: 12, md: 16 },
+                  px: { xs: 2, md: 4 },
+                  py: 1,
+                  bgcolor: COLOR_DARK,
+                  boxShadow: `1px 5px 8px ${COLOR_DARK}`
+                }}
+                component={Link}
+                href="https://www.instagram.com/naughtywalter"
+                target="_blank"
+              >Visit our instagram</PrimaryOutlinedButton>
+            </Stack>
           </Container>
         </Stack>
       </Box>
