@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Card, CardContent, Container, Grid, Link, Stack } from '@mui/material';
 import { BrightTypography } from '../../utils/styledComponents';
-import { COLOR_DARK, COLOR_SECONDARY } from '../../utils/constants';
+import { COLOR_DARK } from '../../utils/constants';
 
 const PARTNERS_LINKS = [
   {

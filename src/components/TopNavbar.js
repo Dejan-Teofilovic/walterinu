@@ -7,7 +7,6 @@ import {
   Container,
   Drawer,
   IconButton,
-  Link,
   List,
   ListItem,
   ListItemButton,
@@ -17,6 +16,7 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { grey } from '@mui/material/colors';
+import { Link as ScrollLink } from 'react-scroll';
 import { PrimaryButton, TextButton } from '../utils/styledComponents';
 import { COLOR_DARK, ROUTES } from '../utils/constants';
 
@@ -66,10 +66,16 @@ export default function TopNavbar() {
                     <ListItem key={route.path}>
                       <ListItemButton
                         sx={{ color: grey[300] }}
-                        component={Link}
-                        href={route.path}
                       >
-                        {route.name}
+                        <ScrollLink
+                          to={route.path}
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          {route.name}
+                        </ScrollLink>
                       </ListItemButton>
                     </ListItem>
                   ))
@@ -96,9 +102,17 @@ export default function TopNavbar() {
               <TextButton
                 key={route.path}
                 sx={{ mr: 4, fontWeight: 600, color: grey[300], display: { xs: 'none', md: 'flex' } }}
-                component={Link}
-                href={route.path}
-              >{route.name}</TextButton>
+              >
+                <ScrollLink
+                  to={route.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {route.name}
+                </ScrollLink>
+              </TextButton>
             ))
           }
           <PrimaryButton

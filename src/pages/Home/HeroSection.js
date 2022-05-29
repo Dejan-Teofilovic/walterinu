@@ -3,8 +3,7 @@ import { Box, Container, Grid, Link, Stack } from "@mui/material";
 import {
   BrightTypography,
   PrimaryButton,
-  PrimaryOutlinedButton,
-  SecondaryTypography
+  PrimaryOutlinedButton
 } from '../../utils/styledComponents';
 
 export default function HeroSection() {
@@ -15,6 +14,7 @@ export default function HeroSection() {
         backgroundSize: 'cover'
       }}
       pt={{ xs: 3, md: 10 }}
+      id="hero"
     >
       <Container maxWidth="xl">
         <Grid container spacing={{ xs: 4, md: 0 }}>
@@ -26,13 +26,13 @@ export default function HeroSection() {
             >
               Walter Inu, The Last OG.
             </BrightTypography>
-            <SecondaryTypography
+            <BrightTypography
               mt={3}
               fontSize={{ xs: 14, md: 20 }}
               textAlign={{ xs: 'center', md: 'left' }}
             >
               Welcome to Walter Inu, a community-driven project ran by the people, for the people. The first crypto project with a community mascot dog and the funniest memes you will ever see. Pow Pow!
-            </SecondaryTypography>
+            </BrightTypography>
             <Stack
               mt={5}
               direction="row"

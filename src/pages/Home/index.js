@@ -9,8 +9,10 @@ import TokenomicsSection from './TokenomicsSection';
 import TeamSection from './TeamSection';
 import Footer from '../../components/Footer';
 import OurPartnersSection from './OurPartnersSection';
+import ScrollFab from '../../components/ScrollFab';
 
 export default function Home() {
+
   return (
     <>
       <HeroSection />
@@ -23,6 +25,7 @@ export default function Home() {
       <TeamSection />
       <OurPartnersSection />
       <Footer />
+      <ScrollFab />
     </>
   );
 }
