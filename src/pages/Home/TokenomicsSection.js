@@ -15,7 +15,7 @@ const CARDS_DATA = [
   {
     title: 'Marketing',
     subtitle: 'Sharing the mission',
-    description: 'Every Marvin Inu transaction gives more fuel to our marketing message. With an experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to send this rocket soaring to Mars.',
+    description: 'Every Walter Inu transaction helps fund the future growth of our token. With our dedicated team and loyal community, we all work together on how to move forward and get Walter seen by the world.',
     buyPercentage: 3,
     sellPercentage: 9,
     image: 'tokenomics_marketing.png',
@@ -24,7 +24,7 @@ const CARDS_DATA = [
   {
     title: 'Liquidity',
     subtitle: 'Sharing the mission',
-    description: 'Every Marvin Inu transaction gives more fuel to our marketing message. With an experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to send this rocket soaring to Mars.',
+    description: 'It is very key to have a healthy Liquidity Pool, so 1 percent of each buy and sell is distributed towards this. The more this grows the more stable price will maintain in the future.',
     buyPercentage: 1,
     sellPercentage: 1,
     image: 'tokenomics_liquidity.png',
@@ -33,7 +33,7 @@ const CARDS_DATA = [
   {
     title: 'Reflection',
     subtitle: 'Sharing the mission',
-    description: 'Every Marvin Inu transaction gives more fuel to our marketing message. With an experienced marketing team that has a systematic and measured approach, we know exactly which switch to flip and when to send this rocket soaring to Mars.',
+    description: 'We believe in rewarding our diamond hand holders, so 1 percent of each buy and sell is redistributed to all Walter holders! Receive extra tokens for simply holding $WINU.',
     buyPercentage: 1,
     sellPercentage: 1,
     image: 'tokenomics_reflection.png',
@@ -121,7 +121,7 @@ const CardItem = ({ dataItem }) => {
 
 export default function TokenomicsSection() {
   return (
-    <Box bgcolor={COLOR_DARK} py={{xs: 6, md: 12}} id="tokenomics">
+    <Box bgcolor={COLOR_DARK} py={{ xs: 6, md: 12 }} id="tokenomics">
       {/* Title */}
       <BrightTypography fontSize={{ xs: 36, md: 58 }} fontWeight={900} textAlign="center">
         Tokenomics
