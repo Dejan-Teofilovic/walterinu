@@ -17,7 +17,7 @@ export default function HeroSection() {
       id="hero"
     >
       <Container maxWidth="xl">
-        <Grid container spacing={{ xs: 4, md: 0 }}>
+        <Grid container spacing={{ xs: 4, md: 0 }} alignItems="center">
           <Grid item xs={12} md={6}>
             <BrightTypography
               fontSize={{ xs: 36, md: 58 }}
