@@ -3,22 +3,13 @@ import {
   Box,
   Container,
   Grid,
-  IconButton,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
   Stack,
-  Typography,
   Icon as MuiIcon,
   Link,
-  Button
 } from '@mui/material';
-import { Email, Phone, Telegram } from '@mui/icons-material';
-import { grey } from '@mui/material/colors';
 import { Icon } from '@iconify/react';
-import { COLOR_PRIMARY, VAR_FADE_IN_UP, VAR_FADE_IN_DOWN, COLOR_DARK } from '../utils/constants';
-import MotionDiv from './MotionDiv';
+import { COLOR_DARK } from '../utils/constants';
+// import MotionDiv from './MotionDiv';
 import { BrightTypography, PrimaryIconButton, PrimaryTypography } from '../utils/styledComponents';
 
 const SOCIAL_LINKS = [
