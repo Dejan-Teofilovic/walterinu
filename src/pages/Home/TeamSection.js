@@ -118,7 +118,7 @@ const CarouselItem = ({ dataItem }) => {
 
 export default function TeamSection() {
   return (
-    <Box py={{ xs: 4, md: 12 }}>
+    <Box py={{ xs: 4, md: 12 }} id="team">
       <BrightTypography
         fontSize={{ xs: 36, md: 58 }}
         fontWeight={900}

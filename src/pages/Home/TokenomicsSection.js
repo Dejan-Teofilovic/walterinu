@@ -11,7 +11,7 @@ import CustomLinearProgressbar from '../../components/CustomLinearProgressbar';
 import MHidden from '../../components/MHidden';
 import Carousel from '../../components/Carousel';
 
-const TOKENOMICS_DATA = [
+const CARDS_DATA = [
   {
     title: 'Marketing',
     subtitle: 'Sharing the mission',
@@ -119,7 +119,7 @@ const CardItem = ({ dataItem }) => {
 
 export default function TokenomicsSection() {
   return (
-    <Box bgcolor={COLOR_DARK} py={{xs: 6, md: 12}}>
+    <Box bgcolor={COLOR_DARK} py={{xs: 6, md: 12}} id="tokenomics">
       {/* Title */}
       <BrightTypography fontSize={{ xs: 36, md: 58 }} fontWeight={900} textAlign="center">
         Tokenomics
@@ -136,7 +136,7 @@ export default function TokenomicsSection() {
         <MHidden width="mdDown">
           <Grid container spacing={4}>
             {
-              TOKENOMICS_DATA.map(dataItem => (
+              CARDS_DATA.map(dataItem => (
                 <Grid item xs={12} md={4} key={dataItem.title}>
                   <CardItem dataItem={dataItem} />
                 </Grid>
@@ -147,14 +147,14 @@ export default function TokenomicsSection() {
         <MHidden width="mdUp">
           <Carousel
             sliderSettings={SLIDER_SETTINGS}
-            data={TOKENOMICS_DATA}
+            data={CARDS_DATA}
             carouselItemComponent={CardItem}
           />
         </MHidden>
       </Box>
 
       {/* How to buy */}
-      <Container maxWidth="lg" sx={{ mt: { xs: 12, md: 24 } }}>
+      <Container maxWidth="lg" sx={{ mt: { xs: 12, md: 24 } }} id="how-to-buy">
         <Grid container alignItems="center" spacing={{ xs: 3, md: 12 }}>
           <Grid item xs={12} md={4}>
             <Stack direction="row" justifyContent="center">

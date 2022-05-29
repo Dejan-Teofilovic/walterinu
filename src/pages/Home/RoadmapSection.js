@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Grid, Stack, Icon as MuiIcon } from '@mui/material';
+import { Box, Container, Grid, Stack, Icon as MuiIcon, Link } from '@mui/material';
 import { Icon } from '@iconify/react';
 import {
   BrightTypography,
@@ -12,38 +12,30 @@ const ROADMAP_DATA = [
   {
     name: 'Phase 1',
     content: [
-      'Seed',
-      'Private sale',
-      'Public sale',
-      'Pre-launch marketing'
+      'First dapp(walterland) release',
+      'Community mascot',
+      'Coin Gecko & Coin Market Cap Listings',
+      'Contract Audit'
     ]
   },
   {
     name: 'Phase 2',
     content: [
-      'Launch on Pancakeswap',
-      'Website launch',
-      'Game Launch',
-      'Marketing Push'
+      'NFT Collection 1',
+      'NFT Marketplace',
+      'P2E Game',
+      'Meme World Release'
     ]
   },
   {
     name: 'Phase 3',
     content: [
-      'NFTs launch',
-      'Coinmarketcap Listing',
-      'Coingecko Listing',
-      'Global reach',
-      'Influencer Marketing'
-    ]
-  },
-  {
-    name: 'Phase 4',
-    content: [
-      'Website 2.0',
-      'Pools and staking',
-      'Certik Audit',
-      'Multi-Chain Launch'
+      'CEX Listings',
+      'Large Marketing Campaign',
+      'Partnerships',
+      'Charitable Donations',
+      'Walter DAO',
+      'Making A Difference In The World'
     ]
   }
 ];
@@ -51,7 +43,7 @@ const ROADMAP_DATA = [
 export default function RoadmapSection() {
   return (
     <Box>
-      {/* Background is an imageListClasses. */}
+      {/* Background is an image. */}
       <Box position="relative">
         <Box
           component="img"
@@ -69,19 +61,19 @@ export default function RoadmapSection() {
             <Grid container>
               <Grid item xs={12} md={6}></Grid>
               <Grid item xs={12} md={6}>
-                <SecondaryTypography
-                  fontSize={{ xs: 16, md: 20 }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                >
-                  Waltermap
-                </SecondaryTypography>
                 <BrightTypography
                   fontSize={{ xs: 36, md: 58 }}
                   textAlign={{ xs: 'center', md: 'left' }}
                   fontWeight={900}
                 >
-                  Roadmap from the moon to mars
+                  Walter, Our Community Mascot
                 </BrightTypography>
+                <SecondaryTypography
+                  fontSize={{ xs: 18, md: 24 }}
+                  textAlign={{ xs: 'center', md: 'left' }}
+                >
+                  We like to do things different at Walter, so we decided to get a community mascot dog as another cool aspect of the token. This is the page strictly dedicated to photos and videos of our crazy little guy. You can also follow him on Instagram @naughtywalter
+                </SecondaryTypography>
                 <Stack
                   mt={5}
                   direction="row"
@@ -96,7 +88,10 @@ export default function RoadmapSection() {
                       bgcolor: COLOR_DARK,
                       boxShadow: `1px 5px 8px ${COLOR_DARK}`
                     }}
-                  >Audit</PrimaryOutlinedButton>
+                    component={Link}
+                    href="https://www.walterinu.io/_files/ugd/01dff7_dd6cc278388240c891b497747b1db83c.pdf"
+                    target="_blank"
+                  >Contract Audit</PrimaryOutlinedButton>
                   <PrimaryOutlinedButton
                     sx={{
                       fontSize: { xs: 12, md: 16 },
@@ -105,7 +100,10 @@ export default function RoadmapSection() {
                       bgcolor: COLOR_DARK,
                       boxShadow: `1px 5px 8px ${COLOR_DARK}`
                     }}
-                  >Liquidity Lock</PrimaryOutlinedButton>
+                    component={Link}
+                    href="https://www.instagram.com/naughtywalter"
+                    target="_blank"
+                  >Visit our instagram</PrimaryOutlinedButton>
                 </Stack>
               </Grid>
             </Grid>
@@ -113,11 +111,11 @@ export default function RoadmapSection() {
         </Stack>
       </Box>
 
-      <Container maxWidth="xl" sx={{ my: { xs: 4, md: 8 } }}>
+      <Container maxWidth="xl" sx={{ my: { xs: 4, md: 8 } }} id="roadmap">
         <Grid container spacing={3}>
           {
             ROADMAP_DATA.map((dataItem, index) => (
-              <Grid item xs={12} md={3} key={index}>
+              <Grid item xs={12} md={4} key={index}>
                 <Stack direction="row" alignItems="center">
                   <SecondaryTypography
                     fontSize={{ xs: 36, md: 58 }}

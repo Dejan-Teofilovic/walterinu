@@ -2,8 +2,8 @@ import { grey } from "@mui/material/colors";
 
 export const ROUTES = [
   {
-    name: 'About',
-    path: '#about'
+    name: 'About us',
+    path: '#about-us'
   },
   {
     name: 'Tokenomics',
@@ -18,12 +18,8 @@ export const ROUTES = [
     path: 'how-to-buy'
   },
   {
-    name: 'FAQ',
-    path: '#faq'
-  },
-  {
-    name: 'Announcements',
-    path: '#announcement'
+    name: 'Team',
+    path: '#team'
   }
 ];
 
