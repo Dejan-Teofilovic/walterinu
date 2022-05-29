@@ -28,6 +28,14 @@ code {
   display: flex !important;
 }
 
+.slick-next {
+  display: none !important;
+}
+
+.slick-prev {
+  display: none !important;
+}
+
 .utility-curve::after {
   content: "";
   border-top-left-radius: 50% 100%;

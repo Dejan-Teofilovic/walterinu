@@ -113,7 +113,7 @@ export default function RoadmapSection() {
         </Stack>
       </Box>
 
-      <Container maxWidth="xl" sx={{ my: { md: 8 } }}>
+      <Container maxWidth="xl" sx={{ my: { xs: 4, md: 8 } }}>
         <Grid container spacing={3}>
           {
             ROADMAP_DATA.map((dataItem, index) => (

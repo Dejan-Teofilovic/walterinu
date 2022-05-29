@@ -6,6 +6,8 @@ import UtilitySection from './UtilitySection';
 import MetaverseSection from './MetaverseSection';
 import RoadmapSection from './RoadmapSection';
 import TokenomicsSection from './TokenomicsSection';
+import TeamSection from './TeamSection';
+import Footer from '../../components/Footer';
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
       <MetaverseSection />
       <RoadmapSection />
       <TokenomicsSection />
+      <TeamSection />
+      <Footer />
     </>
   );
 }
