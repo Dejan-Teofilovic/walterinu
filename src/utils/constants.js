@@ -15,7 +15,7 @@ export const ROUTES = [
   },
   {
     name: 'How to buy',
-    path: 'how-to-buy'
+    path: '#how-to-buy'
   },
   {
     name: 'Team',
