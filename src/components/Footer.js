@@ -1,8 +1,6 @@
 import React from 'react';
 import {
   Box,
-  Container,
-  Grid,
   Stack,
   Icon as MuiIcon,
   Link,
@@ -10,7 +8,7 @@ import {
 import { Icon } from '@iconify/react';
 import { COLOR_DARK } from '../utils/constants';
 // import MotionDiv from './MotionDiv';
-import { BrightTypography, PrimaryIconButton, PrimaryTypography } from '../utils/styledComponents';
+import { BrightTypography, PrimaryIconButton } from '../utils/styledComponents';
 
 const SOCIAL_LINKS = [
   {
@@ -45,113 +43,33 @@ const SOCIAL_LINKS = [
   }
 ];
 
-const PARTNERS_LINKS = [
-  {
-    image: 'partner_pancakeswap.webp',
-    href: 'https://pancakeswap.finance/swap?outputCurrency=0x42C1613dD2236CFd60B5cbEc846b5EAD71be99Df'
-  },
-  {
-    image: 'partner_interfi.webp',
-    href: 'https://3d62cc89-8a3e-4d84-be46-1ea0917c955e.filesusr.com/ugd/01dff7_dd6cc278388240c891b497747b1db83c.pdf'
-  },
-  {
-    image: 'partner_bscscan.webp',
-    href: 'https://bscscan.com/token/0x42c1613dd2236cfd60b5cbec846b5ead71be99df'
-  },
-  {
-    image: 'partner_coingecko.webp',
-    href: 'https://www.coingecko.com/en/coins/walter-inu'
-  },
-  {
-    image: 'partner_coinmarketcap.webp',
-    href: 'https://coinmarketcap.com/currencies/walterinu/'
-  },
-  {
-    image: 'partner_dext.webp',
-    href: 'https://www.dextools.io/app/bsc/pair-explorer/0x8a6e2125cdd31d741c85752913025adcecb80b7d'
-  }
-];
-
 export default function Footer() {
   return (
     <Box>
-      <Box bgcolor={COLOR_DARK} py={{ xs: 4, md: 10 }}>
-        <Container maxWidth="xl">
-          <Grid container spacing={{ xs: 8, md: 0 }}>
-            <Grid item xs={12} md={4}>
-              <Stack alignItems={{ xs: 'center', md: 'start' }}>
-                <PrimaryTypography
-                  fontSize={{ xs: 20, md: 32 }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                >
-                  Our Channel
-                </PrimaryTypography>
-                <Stack mt={4} spacing={1}>
-                  {
-                    SOCIAL_LINKS.map((dataItem, index) => (
-                      <Stack
-                        key={index}
-                        direction="row"
-                        alignItems="center"
-                        spacing={3}
-                      >
-                        <PrimaryIconButton component={Link} href={dataItem.href} target="_blank">
-                          <MuiIcon sx={{ color: COLOR_DARK }}>
-                            <Icon icon={dataItem.icon} />
-                          </MuiIcon>
-                        </PrimaryIconButton>
-                        <BrightTypography component={Link} href={dataItem.href} target="_blank">
-                          {dataItem.name}
-                        </BrightTypography>
-                      </Stack>
-                    ))
-                  }
-                </Stack>
-              </Stack>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Stack alignItems={{ xs: 'center', md: 'start' }}>
-                <PrimaryTypography
-                  fontSize={{ xs: 20, md: 32 }}
-                  textAlign={{ xs: 'center', md: 'left' }}
-                >
-                  Our Partners
-                </PrimaryTypography>
-                <Stack mt={4} spacing={1}>
-                  {
-                    PARTNERS_LINKS.map((dataItem, index) => (
-                      <Box
-                        component={Link}
-                        href={dataItem.href}
-                        target="_blank"
-                        key={index}
-                      >
-                        <Box
-                          component="img"
-                          src={`/assets/images/${dataItem.image}`}
-                          alt={dataItem.image}
-                        />
-                      </Box>
-                    ))
-                  }
-                </Stack>
-              </Stack>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Stack direction="row" justifyContent="center">
-                <Box
-                  component="img"
-                  src="/assets/images/logo.png"
-                  width={{ xs: '40%', md: '80%' }}
-                />
-              </Stack>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
-
-      <Stack bgcolor="#131313" py={3} direction="row" justifyContent="center">
-        <BrightTypography textAlign="center" fontSize={{ xs: 16, md: 20 }}>
+      <Stack bgcolor="#131313" py={3} justifyContent="center" alignItems="center" spacing={2}>
+        <Stack direction="row" justifyContent="center">
+          <Box
+            component="img"
+            src="/assets/images/logo.png"
+            alt="logo"
+            width={100}
+          />
+        </Stack>
+        <BrightTypography textAlign="center" fontSize={{ xs: 20, md: 28 }} fontWeight={900}>
+          WALTER INU
+        </BrightTypography>
+        <Stack direction="row" justifyContent="center" spacing={3}>
+          {
+            SOCIAL_LINKS.map((dataItem, index) => (
+              <PrimaryIconButton key={index} component={Link} href={dataItem.href} target="_blank">
+                <MuiIcon sx={{ color: COLOR_DARK, fontSize: 14 }}>
+                  <Icon icon={dataItem.icon} />
+                </MuiIcon>
+              </PrimaryIconButton>
+            ))
+          }
+        </Stack>
+        <BrightTypography textAlign="center" fontSize={{ xs: 14, md: 16 }}>
           © 2022 WalterInu.Inc
         </BrightTypography>
       </Stack>

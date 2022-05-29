@@ -99,10 +99,10 @@ export default function UtilitySection() {
           fontWeight={900}
           textAlign={{ xs: 'center', md: 'left' }}
         >
-          Metaverse plan of invasion
+          Walter Takeover
         </BrightTypography>
         <SecondaryTypography fontSize={{ md: 18 }} textAlign={{ xs: 'center', md: 'left' }}>
-          Walter Inu is powered by strong utility that will ensure this project reaches Moon
+          Walter Inu is powered by strong utility that will ensure this project reaches the moon
         </SecondaryTypography>
 
         <Box mt={7}>

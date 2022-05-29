@@ -3,11 +3,12 @@ import CoinMarketCapSection from './CoinMarketCapSection';
 import HeroSection from './HeroSection';
 import JoinTheInvasionSection from './JoinTheInvasionSection';
 import UtilitySection from './UtilitySection';
-import MetaverseSection from './MetaverseSection';
+// import MetaverseSection from './MetaverseSection';
 import RoadmapSection from './RoadmapSection';
 import TokenomicsSection from './TokenomicsSection';
 import TeamSection from './TeamSection';
 import Footer from '../../components/Footer';
+import OurPartnersSection from './OurPartnersSection';
 
 export default function Home() {
   return (
@@ -16,10 +17,11 @@ export default function Home() {
       <CoinMarketCapSection />
       <UtilitySection />
       <JoinTheInvasionSection />
-      <MetaverseSection />
+      {/* <MetaverseSection /> */}
       <RoadmapSection />
       <TokenomicsSection />
       <TeamSection />
+      <OurPartnersSection />
       <Footer />
     </>
   );

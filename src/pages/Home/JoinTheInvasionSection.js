@@ -10,29 +10,7 @@ import {
 
 export default function JoinTheInvasionSection() {
   return (
-    <Box bgcolor={COLOR_DARK}>
-      <Container maxWidth="xl">
-        <Stack direction="row" justifyContent="center">
-          <Stack
-            sx={{
-              borderBottomLeftRadius: 9999,
-              borderBottomRightRadius: 9999,
-              background: '#131313'
-            }}
-            direction="row"
-            justifyContent="center"
-            width="30%"
-            p={{ xs: 2, md: 5 }}
-          >
-            <Box
-              component="img"
-              src="/assets/images/join_the_invasion.png"
-              alt="Join the invasion"
-              width="40%"
-            />
-          </Stack>
-        </Stack>
-      </Container>
+    <Box bgcolor={COLOR_DARK} pt={{ md: 8 }}>
       <Box position="relative">
         <Box
           position="absolute"

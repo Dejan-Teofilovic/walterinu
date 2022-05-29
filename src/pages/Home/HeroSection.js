@@ -25,9 +25,6 @@ export default function HeroSection() {
               textAlign={{ xs: 'center', md: 'left' }}
             >
               Walter Inu, The Last OG.
-              Memes.
-              Community.
-              Walter.
             </BrightTypography>
             <SecondaryTypography
               mt={3}
@@ -42,26 +39,26 @@ export default function HeroSection() {
               spacing={{ xs: 1, md: 3 }}
               justifyContent={{ xs: 'center', md: 'start' }}
             >
-              <PrimaryButton
-                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
-                component={Link}
-                href="https://walterland.io"
-                target="_blank"
-              >Walterland</PrimaryButton>
               <PrimaryOutlinedButton
                 sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
                 component={Link}
                 href="http://worldofwalters.io/"
                 target="_blank"
               >World of Walters</PrimaryOutlinedButton>
+              <PrimaryButton
+                sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
+                component={Link}
+                href="https://walterland.io"
+                target="_blank"
+              >Walterland</PrimaryButton>
             </Stack>
           </Grid>
           <Grid item xs={12} md={6}>
             <Stack direction="row" justifyContent="center" position="relative">
-              <Box 
-                position="absolute" 
-                width={{ xs: 300, sm: 450, md: 600 }} 
-                height={{ xs: 300, sm: 450, md: 600 }} 
+              <Box
+                position="absolute"
+                width={{ xs: 300, sm: 450, md: 600 }}
+                height={{ xs: 300, sm: 450, md: 600 }}
                 zIndex={10}
               >
                 <lottie-player
