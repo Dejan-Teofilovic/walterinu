@@ -8,7 +8,7 @@ import {
   SecondaryTypography
 } from '../../utils/styledComponents';
 
-export default function JoinTheInvasionSection() {
+export default function AboutUsSection() {
   return (
     <Box bgcolor={COLOR_DARK} pt={{ md: 8 }}>
       <Box position="relative">
@@ -56,7 +56,7 @@ export default function JoinTheInvasionSection() {
             <PrimaryOutlinedButton
               sx={{ fontSize: { xs: 12, md: 16 }, px: { xs: 2, md: 4 }, py: 1 }}
               component={Link}
-              href="https://www.walterinu.io/_files/ugd/01dff7_90846f29678b4e358e222afcf78cbfa6.pdf"
+              href="/assets/docs/whitepaper.pdf"
               target="_blank"
             >Whitepaper</PrimaryOutlinedButton>
           </Stack>

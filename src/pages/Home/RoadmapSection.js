@@ -87,7 +87,7 @@ export default function RoadmapSection() {
                   boxShadow: `1px 5px 8px ${COLOR_DARK}`
                 }}
                 component={Link}
-                href="https://www.walterinu.io/_files/ugd/01dff7_dd6cc278388240c891b497747b1db83c.pdf"
+                href="/assets/docs/contract-audit.pdf"
                 target="_blank"
               >Contract Audit</PrimaryOutlinedButton>
               <PrimaryOutlinedButton

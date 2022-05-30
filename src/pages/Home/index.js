@@ -1,7 +1,7 @@
 import React from 'react';
 import CoinMarketCapSection from './CoinMarketCapSection';
 import HeroSection from './HeroSection';
-import JoinTheInvasionSection from './JoinTheInvasionSection';
+import AboutUsSection from './AboutUsSection'
 import UtilitySection from './UtilitySection';
 // import MetaverseSection from './MetaverseSection';
 import RoadmapSection from './RoadmapSection';
@@ -17,7 +17,7 @@ export default function Home() {
       <HeroSection />
       <CoinMarketCapSection />
       <UtilitySection />
-      <JoinTheInvasionSection />
+      <AboutUsSection />
       {/* <MetaverseSection /> */}
       <RoadmapSection />
       <TokenomicsSection />
