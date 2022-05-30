@@ -159,7 +159,7 @@ export default function TokenomicsSection() {
             <Stack direction="row" justifyContent="center">
               <Box
                 component="img"
-                src="/assets/images/how_to_buy.jpg"
+                src="/assets/images/how_to_buy.png"
                 alt="How to buy"
                 width="100%"
               />
